@@ -1,0 +1,18 @@
+.profile{
+
+}
+
+.backgroundImage{
+    width: 100%;
+}
+
+.avatar{
+    margin: 1rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.posts{
+    padding: 1rem;
+}

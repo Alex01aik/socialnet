@@ -1,0 +1,16 @@
+.navMenu{
+    grid-area: nav;
+    background-color: rgb(150, 150, 255);
+    padding-top: 20px;
+}
+
+.item{
+    display: block;
+    margin: 0.25rem 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.item.active{
+    color: royalblue;
+}
