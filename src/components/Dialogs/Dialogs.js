@@ -4,6 +4,15 @@ import DialogItem from './DialogItem';
 import Message from '../Message/Message';
 
 const Dialogs = (props) => {
+
+    let onAddMessage = () => {
+        props.addMessage();
+    }
+
+    let onMessageChange = (event) => {
+        props.updateMessage(event.target.value);
+    }
+
     return(
         <div className={style.dialogs}>
             <div className={style.dialogsItems}>
@@ -26,6 +35,8 @@ const Dialogs = (props) => {
                         />
                     )
                 })}
+                <textarea onChange={onMessageChange} value={props.newMessageText}></textarea>
+                <button onClick={onAddMessage}>Post message</button>
             </div>
         </div>
     )

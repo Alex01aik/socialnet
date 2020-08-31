@@ -3,8 +3,8 @@ import Post from '../Post/Post';
 
 const UserPosts = (props) => {
 
-    let addNewPost = () => {
-        props.addPost()
+    let onAddPost = () => {
+        props.addPost();
     }
 
     let onPostChange = (event) => {
@@ -14,7 +14,7 @@ const UserPosts = (props) => {
     return(
         <div className="posts">
                 <textarea onChange={onPostChange} value={props.newPostText}></textarea>
-                <button onClick={addNewPost}>Add post</button>
+                <button onClick={onAddPost}>Add post</button>
                 <h4>My posts</h4>
                 {props.posts.map( post => {
                     return(

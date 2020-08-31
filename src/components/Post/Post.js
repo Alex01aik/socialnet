@@ -6,7 +6,7 @@ const Post = (props) => {
         <img
             className="avatar"
             alt="avatar"
-            src="https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg"
+            src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
         />
         <p>{props.message}</p>
     </div>

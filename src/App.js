@@ -3,8 +3,9 @@ import './App.css';
 import Header from './components/Header/Header';
 import NavMenu from './components/Navigation/NavMenu';
 import Profile from './components/Profile/Profile';
-// import Dialogs from './components/Dialogs/Dialogs';
+import Dialogs from './components/Dialogs/DialogsContainer';
 import { BrowserRouter, Route } from 'react-router-dom';
+import Users from './components/Users/UsersContainer';
 
 const App = (props) => {
   return (
@@ -13,12 +14,12 @@ const App = (props) => {
         <Header />
         <NavMenu />
         <div className="appContent">
-          {/* <Route path="/dialogs" render={()=>
-            <Dialogs
-              dialogsItems={props.mystore.dialogs.dialogsItems}
-              messages={props.mystore.dialogs.messages}/>}/> */}
+          <Route path="/dialogs" render={()=>
+            <Dialogs/>}/>
           <Route path="/profile" render={()=>
             <Profile />}/>
+          <Route path="/users" render={()=>
+            <Users />}/>
         </div>
       </div>
     </BrowserRouter>

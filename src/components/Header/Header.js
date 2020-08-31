@@ -7,7 +7,7 @@ const Header = () => {
             <img
                 className="logo"
                 alt="logo"
-                src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png' />
+                src='https://i.pinimg.com/originals/13/30/ba/1330ba39ac54aa1c67c7f6f12db4af20.png' />
         </header>
     )
 }

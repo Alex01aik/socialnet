@@ -18,6 +18,12 @@ const NavMenu = () => {
                     Messages
             </NavLink>
             <NavLink
+                to="/users"
+                className={style.item}
+                activeClassName={style.active}>
+                Users
+                </NavLink>
+            <NavLink
                 to="/news"
                 className={style.item}
                 activeClassName={style.active}>
