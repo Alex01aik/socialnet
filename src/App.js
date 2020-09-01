@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import NavMenu from './components/Navigation/NavMenu';
-import Profile from './components/Profile/Profile';
+import Profile from './components/Profile/ProfileContainer';
 import Dialogs from './components/Dialogs/DialogsContainer';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Users from './components/Users/UsersContainer';
