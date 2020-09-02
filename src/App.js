@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header/Header';
+import Header from './components/Header/HeaderContainer';
 import NavMenu from './components/Navigation/NavMenu';
 import Profile from './components/Profile/ProfileContainer';
 import Dialogs from './components/Dialogs/DialogsContainer';
@@ -16,7 +16,7 @@ const App = (props) => {
         <div className="appContent">
           <Route path="/dialogs" render={()=>
             <Dialogs/>}/>
-          <Route path="/profile" render={()=>
+          <Route path="/profile/:userId?" render={()=>
             <Profile />}/>
           <Route path="/users" render={()=>
             <Users />}/>
