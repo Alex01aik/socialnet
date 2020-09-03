@@ -3,6 +3,7 @@ import Users from './Users';
 import { connect } from 'react-redux';
 import { follow, unfollow, setCurrentPage, toggleFollowingProgress, getUsers } from '../../redux/usersReducer';
 import {Preloader} from '../common/Preloader/Preloader';
+import { compose } from 'redux';
 
 class UsersAPIComponent extends React.Component {
     
@@ -45,6 +46,8 @@ let mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, { follow,
+
+
+export default compose(connect(mapStateToProps, { follow,
     unfollow, setCurrentPage, toggleFollowingProgress,
-    getUsers })(UsersAPIComponent);
+    getUsers }))(UsersAPIComponent);
